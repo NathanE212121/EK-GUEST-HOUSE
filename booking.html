@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Stay — EK Pension | Chelenko, Oromia</title>
+<meta name="description" content="Reserve your room at EK Pension. Share a few details and we'll confirm your reservation by phone or WhatsApp the same day.">
+<link rel="icon" href="images/logo.jpg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header scrolled">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="images/logo.jpg" alt="EK Pension logo"></span>
+      <span class="brand-text">
+        <span class="name">EK Pension</span>
+        <span class="loc">Chelenko · Oromia</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta-area">
+      <a href="booking.html" class="btn btn-primary">Book Now</a>
+      <button class="menu-toggle" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-backdrop"></div>
+<nav class="mobile-drawer">
+  <button class="drawer-close" aria-label="Close menu">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="index.html">Home</a>
+  <a href="rooms.html">Rooms</a>
+  <a href="contact.html">Contact</a>
+  <a href="booking.html" class="btn btn-primary" style="font-family: var(--sans); font-size:15px; justify-content:center; margin-top:10px;">Book Now</a>
+</nav>
+
+<!-- ============ BOOKING FORM ============ -->
+<section class="booking section-pad" style="padding-top:160px;">
+  <div class="wrap">
+    <div class="section-head center-head reveal" style="margin-bottom:54px;">
+      <span class="eyebrow" style="justify-content:center;">Reservations</span>
+      <h2>Book your <em>stay.</em></h2>
+      <p>Share a few details and we'll confirm your reservation by phone or WhatsApp the same day.</p>
+    </div>
+
+    <form id="booking-form" class="booking-form-card reveal">
+      <div class="form-row full">
+        <div class="field">
+          <label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg>Full Name</label>
+          <input type="text" name="name" placeholder="Your full name" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>Email</label>
+          <input type="email" name="email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Phone</label>
+          <input type="tel" name="phone" placeholder="+251 ..." required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Check-in</label>
+          <input type="date" name="checkin" required>
+        </div>
+        <div class="field">
+          <label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Check-out</label>
+          <input type="date" name="checkout" required>
+        </div>
+      </div>
+
+      <div class="form-row full">
+        <div class="field">
+          <label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v2"/><circle cx="17" cy="9" r="3"/><path d="M22 21v-1a5 5 0 0 0-3.5-4.77"/></svg>Guests</label>
+          <select name="guests">
+            <option value="1">1 guest</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5+">5+ guests</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        Submit Booking Request
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </button>
+      <p class="form-note">Submitting will open WhatsApp with your details prefilled.</p>
+      <div class="form-success">Thanks! WhatsApp is opening with your reservation details — we'll confirm shortly.</div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span class="brand-mark"><img src="images/logo.jpg" alt="EK Pension logo"></span>
+          <span class="brand-text">
+            <span class="name">EK Pension</span>
+            <span class="loc">Since 2018</span>
+          </span>
+        </div>
+        <p>Warm Ethiopian hospitality on Chelenko Main Road. Clean, comfortable rooms with the comforts of home.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Reach Us</h4>
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Chelenko Main Road, Oromia</span>
+        </div>
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+251 921 414 245</span>
+        </div>
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          <span>nathan20202323@gmail.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EK Pension. All rights reserved.</span>
+      <span>Crafted with care in Chelenko, Ethiopia.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Prefill room name from query string if present
+  const params = new URLSearchParams(window.location.search);
+  const room = params.get('room');
+  if (room){
+    const note = document.querySelector('.form-note');
+    const banner = document.createElement('div');
+    banner.style.cssText = "background: rgba(224,138,46,0.12); border-radius:12px; padding:14px 18px; margin-bottom:24px; font-size:14px; color: var(--ink); font-weight:600; text-align:center;";
+    banner.textContent = `Booking request for: ${room.replace(/\+/g,' ')}`;
+    document.querySelector('.booking-form-card').prepend(banner);
+  }
+</script>
+</body>
+</html>
